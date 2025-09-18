@@ -9,6 +9,10 @@ import 'package:new_journey/widgets/ex16_gesturedetector.dart';
 import 'package:new_journey/widgets/ex17_inkandinkwell.dart';
 import 'package:new_journey/widgets/ex18_listtile.dart';
 import 'package:new_journey/widgets/ex19_circleavatar.dart';
+import 'package:new_journey/widgets/ex20_singlechildscrollview.dart';
+import 'package:new_journey/widgets/ex21_listview.dart';
+import 'package:new_journey/widgets/ex22_listview_builder.dart';
+import 'package:new_journey/widgets/ex23_gridview_gridviewbuilder.dart';
 import 'package:new_journey/widgets/ex2_text.dart';
 import 'package:new_journey/widgets/ex3_container.dart';
 import 'package:new_journey/widgets/ex4_images.dart';
@@ -27,7 +31,7 @@ import 'package:new_journey/widgets/ex9_row.dart';
     @override
     Widget build(BuildContext context) {
       return MaterialApp(
-       home: Ex19Circleavatar(),
+       home: Ex23GridviewGridviewbuilder(),
       );
       
     }
