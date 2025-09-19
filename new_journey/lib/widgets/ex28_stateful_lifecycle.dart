@@ -51,10 +51,10 @@ import 'ex28_part.dart';
                     child: Text("Increase")),
                 ElevatedButton(
                     onPressed: (){
-                      setState(() {
-                        number++;
-                      });
-                      debugPrint(number.toString());
+                     Navigator.of(context).push(
+                       MaterialPageRoute(builder: (context)=> NumberText(number: 99)
+                       )
+                      );
                     },
                     child: Text("Go To Detail"))
               ],
