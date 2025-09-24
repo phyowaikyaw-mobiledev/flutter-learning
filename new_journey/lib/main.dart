@@ -1,4 +1,5 @@
   import 'package:flutter/material.dart';
+import 'package:new_journey/navigation/screen_a.dart';
 import 'package:new_journey/widgets/ex10_column.dart';
 import 'package:new_journey/widgets/ex11_stack.dart';
 import 'package:new_journey/widgets/ex12_positioned.dart';
@@ -26,6 +27,9 @@ import 'package:new_journey/widgets/ex7_card.dart';
 import 'package:new_journey/widgets/ex8_buttons.dart';
 import 'package:new_journey/widgets/ex9_row.dart';
 
+import 'navigation/screen_b.dart';
+import 'navigation/screen_c.dart';
+
   void main (){
     runApp(const MyApp());
   }
@@ -36,7 +40,36 @@ import 'package:new_journey/widgets/ex9_row.dart';
     @override
     Widget build(BuildContext context) {
       return MaterialApp(
-       home: Ex28StatefulLifecycle(),
+        title: 'Flutter Course',
+       debugShowCheckedModeBanner: false,  // for slide debug banner
+        home: ScreenA(), // if open this will show error
+        // initialRoute: 'screenC', //you will see screenC in initialRoute,
+
+        //onGenerateRoute
+        // onGenerateInitialRoutes: (initialRoute)=>[
+        //   MaterialPageRoute(builder: (_) => ScreenC()),],
+        // onGenerateRoute:(settings) {
+        //   switch (settings.name){
+        //     case 'screenA':
+        //       return MaterialPageRoute(builder: (_)=> ScreenA());
+        //     case 'screenB':
+        //       return MaterialPageRoute(
+        //           builder: (_)=> ScreenB(
+        //               data: settings.arguments as String));
+        //     case 'screenC' :
+        //       return MaterialPageRoute(builder: (_) => ScreenC());
+        //     default:
+        //       return MaterialPageRoute(builder: (_) => ScreenA());
+        //   }
+        // },
+        //
+        //
+        // Named Route ->
+        routes: {
+          'screenA' : (context) => ScreenA(),
+          'screenB' : (context) => ScreenB(data: "*****"),
+          'screenC' : (context) => ScreenC(),
+        },
       );
       
     }
