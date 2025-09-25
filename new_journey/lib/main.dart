@@ -1,4 +1,5 @@
   import 'package:flutter/material.dart';
+import 'package:new_journey/buildcontext_main.dart';
 import 'package:new_journey/navigation/screen_a.dart';
 import 'package:new_journey/widgets/ex10_column.dart';
 import 'package:new_journey/widgets/ex11_stack.dart';
@@ -19,7 +20,9 @@ import 'package:new_journey/widgets/ex25_gridtilebar.dart';
 import 'package:new_journey/widgets/ex26_wrap.dart';
 import 'package:new_journey/widgets/ex27_statefulwidget.dart';
 import 'package:new_journey/widgets/ex28_stateful_lifecycle.dart';
+import 'package:new_journey/widgets/ex29_floating_action_button.dart';
 import 'package:new_journey/widgets/ex2_text.dart';
+import 'package:new_journey/widgets/ex30_bottom_nav.dart';
 import 'package:new_journey/widgets/ex3_container.dart';
 import 'package:new_journey/widgets/ex4_images.dart';
 import 'package:new_journey/widgets/ex6_icons.dart';
@@ -42,7 +45,7 @@ import 'navigation/screen_c.dart';
       return MaterialApp(
         title: 'Flutter Course',
        debugShowCheckedModeBanner: false,  // for slide debug banner
-        home: ScreenA(), // if open this will show error
+        home:Ex30BottomNav(), // if open this will show error
         // initialRoute: 'screenC', //you will see screenC in initialRoute,
 
         //onGenerateRoute
@@ -65,11 +68,11 @@ import 'navigation/screen_c.dart';
         //
         //
         // Named Route ->
-        routes: {
-          'screenA' : (context) => ScreenA(),
-          'screenB' : (context) => ScreenB(data: "*****"),
-          'screenC' : (context) => ScreenC(),
-        },
+        // routes: {
+        //   'screenA' : (context) => ScreenA(),
+        //   'screenB' : (context) => ScreenB(data: "*****"),
+        //   'screenC' : (context) => ScreenC(),
+        // },
       );
       
     }
