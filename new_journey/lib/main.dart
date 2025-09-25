@@ -1,7 +1,7 @@
   import 'package:flutter/material.dart';
 import 'package:new_journey/buildcontext_main.dart';
-import 'package:new_journey/ex31_navigationbar.dart';
-import 'package:new_journey/ex32_navigationrail.dart';
+import 'package:new_journey/widgets/ex31_navigationbar.dart';
+import 'package:new_journey/widgets/ex32_navigationrail.dart';
 import 'package:new_journey/navigation/screen_a.dart';
 import 'package:new_journey/widgets/ex10_column.dart';
 import 'package:new_journey/widgets/ex11_stack.dart';
