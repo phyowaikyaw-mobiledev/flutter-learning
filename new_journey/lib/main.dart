@@ -25,6 +25,12 @@ import 'package:new_journey/widgets/ex28_stateful_lifecycle.dart';
 import 'package:new_journey/widgets/ex29_floating_action_button.dart';
 import 'package:new_journey/widgets/ex2_text.dart';
 import 'package:new_journey/widgets/ex30_bottom_nav.dart';
+import 'package:new_journey/widgets/ex33_drawer.dart';
+import 'package:new_journey/widgets/ex34_indexedstack.dart';
+import 'package:new_journey/widgets/ex35_popupmenubutton.dart';
+import 'package:new_journey/widgets/ex36_circularprogressindicator.dart';
+import 'package:new_journey/widgets/ex37_linearprogressindicator.dart';
+import 'package:new_journey/widgets/ex38_slider.dart';
 import 'package:new_journey/widgets/ex3_container.dart';
 import 'package:new_journey/widgets/ex4_images.dart';
 import 'package:new_journey/widgets/ex6_icons.dart';
@@ -47,7 +53,9 @@ import 'navigation/screen_c.dart';
       return MaterialApp(
         title: 'Flutter Course',
        debugShowCheckedModeBanner: false,  // for slide debug banner
-        home:Ex32Navigationrail(), // if open this will show error
+        home:Ex38Slider(),
+
+        // if open this will show error
         // initialRoute: 'screenC', //you will see screenC in initialRoute,
 
         //onGenerateRoute
@@ -76,6 +84,6 @@ import 'navigation/screen_c.dart';
         //   'screenC' : (context) => ScreenC(),
         // },
       );
-      
+
     }
   }
